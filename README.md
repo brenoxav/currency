@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Currency
 
-## Available Scripts
+> Microverse's React capstone project
 
-In the project directory, you can run:
+<!-- ![screenshot](./screenshot-1.png) -->
 
-### `npm start`
+A mobile web single-page application to check the daily exchange rate of the world's currencies. It makes use of React, Redux, and a currency API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- HTML & CSS
+- JavaScript
+- React
+- Redux
+- API
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check out a live demo of this project by [clicking here.](https://currency-x.netlify.app/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Download or clone the repository's contents.
+2. Go to the project's root directory.
+```
+cd currency
+```
+3. Install all the dependencies:
+```
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Install
 
-## Learn More
+You can either build a local production version of the project or open it directly on a server in development mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  #### Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  1. To build and open a production version of the app run the command:
+  ```
+  npm run build
+  ```
+  2. Then open *dist/index.html* in you preferred browser.
 
-### Code Splitting
+  #### Start Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  1. To open the app in development mode on *dev-server* run:
+  ```
+  npm start
+  ```
+  2. Then go to `http://localhost:3000/` in you preferred browser.
 
-### Analyzing the Bundle Size
+  #### Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  1. To build and open a production version of the app run the command:
+  ```
+  npm run build
+  ```
+  2. Then open *dist/index.html* in you preferred browser.
 
-### Making a Progressive Web App
+  #### Start Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  1. To open the app in development mode on *dev-server* run:
+  ```
+  npm start
+  ```
+  2. Then go to `http://localhost:8080/` in you preferred browser.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👨‍💻 **Breno Xavier**
 
-### Deployment
+- GitHub: [@brenoxav](https://github.com/brenoxav)
+- LinkedIn: [Breno Xavier](https://linkedin.com/in/brenoxav)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](https://github.com/brenoxav/currency/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) - [Design idea](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+- [Fawaz Ahmed](https://github.com/fawazahmed0) - [Currency API](https://github.com/fawazahmed0/currency-api)
