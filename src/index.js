@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
 import App from './App';
+import store from './redux/configureStore';
+import { getCurrenciesFromApi, getExchangeFromAPi } from './redux/currencies/currencies';
+import './index.css';
+
+store.dispatch(getCurrenciesFromApi());
+store.dispatch(getExchangeFromAPi());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

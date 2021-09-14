@@ -1,5 +1,5 @@
 class CurrencyAPI {
-  constructor () {
+  constructor() {
     this.BASE_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/';
   }
 
@@ -8,11 +8,11 @@ class CurrencyAPI {
     return response.json();
   }
 
-  getCurrenccies() {
+  getCurrencies() {
     return this.callApi('currencies.json');
   }
 
-  getExchange(currency='usd') {
+  getExchange(currency = 'usd') {
     return this.callApi(`currencies/${currency}.json`);
   }
 }
