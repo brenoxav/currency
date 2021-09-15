@@ -4,8 +4,18 @@ const GET_CURRENCIES_FROM_API = 'currencies/GET_CURRENCIES_FROM_API';
 const GET_EXCHANGE_FROM_API = 'currencies/GET_EXCHANGE_FROM_API';
 
 const initialState = {
-  currencies: {},
+  currencies: [],
   usdExchange: {},
+};
+
+const formatCurrencies = (currenciesObj) => {
+  const entriesArr = Object.entries(currenciesObj);
+  const currenciesArr = entriesArr.map((currency) => ({
+    code: currency[0],
+    name: currency[1],
+  }
+  ));
+  return currenciesArr;
 };
 
 export const getCurrenciesFromApi = () => ((dispatch) => {
@@ -13,7 +23,7 @@ export const getCurrenciesFromApi = () => ((dispatch) => {
     .then((response) => {
       dispatch({
         type: GET_CURRENCIES_FROM_API,
-        payload: response,
+        payload: formatCurrencies(response),
       });
     });
 });
