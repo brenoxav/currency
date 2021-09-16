@@ -4,12 +4,18 @@ import '../styles/Navbar.css';
 const Navbar = () => (
   <header className="navbar">
     <NavLink exact to="/">
-      <span>back</span>
+      <span className="material-icons-outlined">
+        arrow_back_ios
+      </span>
     </NavLink>
-    <span>forex today</span>
+    <span className="navbar-title">forex today</span>
     <span>
-      <span>mic</span>
-      <span>opt</span>
+      <span className="material-icons-outlined navbar-icons">
+        mic
+      </span>
+      <span className="material-icons-outlined navbar-icons">
+        settings
+      </span>
     </span>
   </header>
 );

@@ -1,0 +1,11 @@
+.item-half-tile {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(var(--tile-size) / 4);
+  width: calc(var(--tile-size) * 2);
+  padding: 0.5rem;
+  border-bottom: 1px solid #fff;
+  background-color: var(--color-primary-darker);
+}

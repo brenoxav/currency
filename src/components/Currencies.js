@@ -10,6 +10,9 @@ const Currencies = () => {
   const elements = currencies.map((currency) => (
     <NavLink to={`/currency/${currency.code}`} key={currency.code}>
       <div className="item-tile">
+        <span className="material-icons-outlined item-arrow-icon">
+          arrow_circle_right
+        </span>
         <div className="item-tile-illustration">
           <h1>{currency.code}</h1>
         </div>
@@ -25,11 +28,10 @@ const Currencies = () => {
     <main>
       <div className="header-tile">
         <div>
-          <h1>USD</h1>
+          <h1>1 USD</h1>
         </div>
         <div>
-          <p>US Dollar</p>
-          <p>1</p>
+          filter
         </div>
       </div>
       <div className="stats-header">
