@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 import '../styles/Currencies.css';
 
@@ -7,15 +8,17 @@ const Currencies = () => {
   const usdExchange = useSelector((state) => state.usdExchange);
 
   const elements = currencies.map((currency) => (
-    <div key={currency.code} className="item-tile">
-      <div className="item-tile-illustration">
-        <h1>{currency.code}</h1>
+    <NavLink to={`/currency/${currency.code}`} key={currency.code}>
+      <div className="item-tile">
+        <div className="item-tile-illustration">
+          <h1>{currency.code}</h1>
+        </div>
+        <div className="item-tile-content">
+          <h2>{currency.name}</h2>
+          <h3>{usdExchange[currency.code]}</h3>
+        </div>
       </div>
-      <div className="item-tile-content">
-        <h2>{currency.name}</h2>
-        <h3>{usdExchange[currency.code]}</h3>
-      </div>
-    </div>
+    </NavLink>
   ));
 
   return (

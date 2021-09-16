@@ -115,6 +115,8 @@ section {
 }
 
 body {
+  max-width: 360px;
+  margin: auto;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -155,3 +157,8 @@ table {
 }
 
 /* CSS RESET END */
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

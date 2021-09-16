@@ -32,8 +32,8 @@
   width: 100%;
 }
 
-.tiles-wrapper > div:nth-child(4n+1),
-.tiles-wrapper > div:nth-child(4n) {
+.tiles-wrapper a:nth-child(4n+1) > div,
+.tiles-wrapper a:nth-child(4n) > div {
   background-color: var(--color-primary);
 }
 
