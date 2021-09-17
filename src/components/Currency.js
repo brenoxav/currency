@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import api from '../api/currency-api';
+import { formatRates } from '../utils/utils';
 
 import '../styles/Currency.css';
 
@@ -8,18 +9,8 @@ const Currency = () => {
   const { code } = useParams();
   const [rates, setRates] = useState([]);
 
-  const formatRates = (ratesObj) => {
-    const entriesArr = Object.entries(ratesObj);
-    const ratesArr = entriesArr.map((rate) => ({
-      code: rate[0],
-      value: rate[1],
-    }
-    ));
-    return ratesArr;
-  };
-
   useEffect(() => {
-    api.getExchange(code)
+    api.getExchangeRates(code)
       .then((rates) => {
         setRates(formatRates(rates[code]));
       });
@@ -27,8 +18,11 @@ const Currency = () => {
 
   const elements = rates ? rates.map((rate) => (
     <div key={rate.code} className="item-half-tile">
-      <span>{`1 ${code}`}</span>
-      <span>{`${rate.value} ${rate.code}`}</span>
+      <span className="material-icons-outlined currency-icon">
+        price_change
+      </span>
+      <span className="currency-value">{rate.value}</span>
+      <span className="currency-code">{rate.code}</span>
     </div>
   )) : [];
 
@@ -36,10 +30,7 @@ const Currency = () => {
     <main>
       <div className="header-tile">
         <div>
-          <h1>{`1 ${code}`}</h1>
-        </div>
-        <div>
-          <p>filter</p>
+          <h1 className="currency-header">{`1 ${code}`}</h1>
         </div>
       </div>
       <div className="stats-header">

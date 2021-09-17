@@ -1,3 +1,19 @@
+.btn {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  background-color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-darker);
+}
+
 .header-tile {
   display: flex;
   align-items: center;

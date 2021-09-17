@@ -1,11 +1,29 @@
+.currency-header {
+  font-size: 4rem;
+}
+
 .item-half-tile {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: calc(var(--tile-size) / 4);
+  height: calc(var(--tile-size) / 2);
   width: calc(var(--tile-size) * 2);
   padding: 0.5rem;
-  border-bottom: 1px solid #fff;
-  background-color: var(--color-primary-darker);
+  font-size: 1.5rem;
+  background-color: var(--color-primary);
+}
+
+.tiles-wrapper > div:nth-child(2n) {
+  background-color: var(--color-primary-dark);
+}
+
+.currency-value {
+  font-weight: bold;
+}
+
+.currency-icon {
+  font-size: 2rem;
+  color: var(--color-primary-darker);
 }

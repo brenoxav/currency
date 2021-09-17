@@ -8,11 +8,11 @@ class CurrencyAPI {
     return response.json();
   }
 
-  getCurrencies() {
+  getCurrencyNames() {
     return this.callApi('currencies.json');
   }
 
-  getExchange(currency = 'usd') {
+  getExchangeRates(currency = 'usd') {
     return this.callApi(`currencies/${currency}.json`);
   }
 }
