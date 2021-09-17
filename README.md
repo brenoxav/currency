@@ -4,7 +4,8 @@
 
 > Microverse's React capstone project
 
-<!-- ![screenshot](./screenshot-1.png) -->
+![screenshot](./screenshot-1.png)
+![screenshot](./screenshot-2.png)
 
 A mobile web single-page application to check the daily exchange rate of the world's currencies. It makes use of React, Redux, and a currency API.
 
