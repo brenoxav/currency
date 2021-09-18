@@ -47,37 +47,44 @@ npm install
 
 You can either build a local production version of the project or open it directly on a server in development mode.
 
-  #### Build
+#### Build
 
-  1. To build and open a production version of the app run the command:
-  ```
-  npm run build
-  ```
-  2. Then open *dist/index.html* in you preferred browser.
+1. To build and open a production version of the app run the command:
+```
+npm run build
+```
+2. Then open *dist/index.html* in you preferred browser.
 
-  #### Start Development Server
+#### Start Development Server
 
-  1. To open the app in development mode on *dev-server* run:
-  ```
-  npm start
-  ```
-  2. Then go to `http://localhost:3000/` in you preferred browser.
+1. To open the app in development mode on *dev-server* run:
+```
+npm start
+```
+2. Then go to `http://localhost:3000/` in you preferred browser.
 
-  #### Build
+#### Build
 
-  1. To build and open a production version of the app run the command:
-  ```
-  npm run build
-  ```
-  2. Then open *dist/index.html* in you preferred browser.
+1. To build and open a production version of the app run the command:
+```
+npm run build
+```
+2. Then open *dist/index.html* in you preferred browser.
 
-  #### Start Development Server
+#### Start Development Server
 
-  1. To open the app in development mode on *dev-server* run:
-  ```
-  npm start
-  ```
-  2. Then go to `http://localhost:8080/` in you preferred browser.
+1. To open the app in development mode on *dev-server* run:
+```
+npm start
+```
+2. Then go to `http://localhost:8080/` in you preferred browser.
+
+### Test
+
+To execute the included test cases, run:
+```
+npm test
+```
 
 ## Author
 
